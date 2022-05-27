@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+}
+
+.header{
+    width: 100%;
+    box-sizing: border-box;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+}
+.menu__ul{
+    display: flex;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.bottons{
+    display: flex;
+    justify-content: space-between;
+
+}
+.menu__signup{
+    background-color: #FFFFFF;
+}
+.menu__login{
+    background-color: #FFFFFF;
+}

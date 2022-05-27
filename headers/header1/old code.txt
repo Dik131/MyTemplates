@@ -1,0 +1,109 @@
+.header{
+    width: 100%;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+.menu__logo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+    color: #05A88D;
+
+}
+
+.menu__ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+    text-transform: capitalize;
+
+    color: #000000;
+}
+.menu{
+    display: flex;
+    flex-direction: fow;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu__li{
+    color: #000000;
+}
+.menu__signup{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+
+    color: #05A88D;
+
+}
+.menu__login{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+
+    color: #05A88D;
+
+}
+li:hover{
+    color: #05A88D;
+}
+.menu__signup:hover{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 105px;
+    height: 45px;
+    left: 1150px;
+    top: 27px;
+
+    border: 1px solid #05A88D;
+    border-radius: 3px
+}
+.menu__login:hover{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 105px;
+    height: 45px;
+    left: 1150px;
+    top: 27px;
+
+    border: 1px solid #05A88D;
+    border-radius: 3px
+}
+a{
+    text-decoration: none;
+}

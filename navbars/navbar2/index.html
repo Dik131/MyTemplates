@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            padding: 0 50px;
+            height: 100px;
+            background-color: rgb(6, 39, 99);
+            display: flex; 
+            justify-content: space-between; /*раскидываем логотип и меню по разным краям*/
+            align-items: center; /*размещаем по центру*/
+        }
+        .menu{
+            list-style: none;
+            height: 100%;
+            display: flex; 
+            align-items: center; /*размещаем по центру меню*/
+        }
+        .logo{
+            color: rgb(52, 179, 253);
+            font-size: 40px;
+            text-decoration: none;
+        }
+        .link{
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+            margin-left: 20px; 
+        }
+        .link:hover{
+            color: rgb(114, 173, 240);
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="#" class="logo">LOGO</a>
+        <ul class="menu">
+            <li class="menu-li"><a href="#" class="link">Home</a></li> 
+            <li class="menu-li"><a href="#" class="link">Blog</a></li>   
+            <li class="menu-li"><a href="#" class="link">Story</a></li>   
+            <li class="menu-li"><a href="#" class="link">Contact</a></li>   
+        </ul>
+    </nav>
+</body>
+</html>
