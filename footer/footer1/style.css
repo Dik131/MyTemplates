@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-family: 'Exo 2', sans-serif;
+    height: 100%;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.main {
+	flex: 1 0 auto;
+}
+.footer{
+    flex: 0 0 auto;
+    
+    background: #05A88D;
+    padding: 44px 39px 36px 40px;
+}
+.footer__top{
+	border-bottom: 1px solid #FFFFFF;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.footer__left{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-bottom: 28px;
+	width: 30%;
+
+}
+.logo{
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 34px;
+	/* identical to box height */
+
+	display: flex;
+	align-items: center;
+	letter-spacing: -0.015em;
+	text-transform: capitalize;
+
+	color: #F1E67D;
+}
+a{
+	text-decoration: none;
+	cursor:pointer;
+}
+.text{
+	flex-wrap: wrap;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 14px;
+	display: flex;
+	align-items: center;
+	letter-spacing: -0.015em;
+
+	color: #FFFFFF;
+}
+.footer__right{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-bottom: 16px;
+
+}
+.contact{
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	/* identical to box height */
+
+	display: flex;
+	align-items: center;
+	letter-spacing: -0.015em;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+	padding-bottom: 16px;
+	justify-content: safe right;
+
+}
+.phone{
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+	display: flex;
+	align-items: center;
+	letter-spacing: -0.015em;
+	text-transform: uppercase;
+
+	color: #F1E67D;
+	padding-bottom: 16px;
+	text-transform: uppercase;
+}
+.address{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 14px;
+	display: flex;
+	align-items: center;
+	letter-spacing: -0.015em;
+
+	color: #FFFFFF;
+}
+.footer__bottom{
+	margin-top: 36px;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 14px;
+	display: flex;
+	align-items: center;
+	letter-spacing: -0.015em;
+	text-transform: capitalize;
+
+	color: #FFFFFF;
+}
+a:hover{
+  color: #05A88D;
+}
