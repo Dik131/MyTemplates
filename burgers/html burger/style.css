@@ -1,0 +1,69 @@
+*{
+	box-sizing: border-box;
+	/*border: 1px solid #000000;*/
+}
+.container{
+	width: 1200px;
+	margin: auto;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+li{
+	list-style: none;
+}
+ul{
+	position: 0;
+	margin: 0;
+}
+#burger, [for=burger]{
+	display: none;
+}
+@media screen and (max-width: 750px){
+	.container{
+	width: 80%;
+	}
+	[for=burger]{
+	display: block;
+	position: fixed;
+	width: 30px;
+	text-align: center;
+	right: 4%;
+	top: 4%;
+	}
+	nav{
+		display: none;
+
+		position: fixed; /*make this burger more beutiful */
+		top: 0;
+		margin-top: 8%;
+		background: rgba(216, 240, 250, 0.8);
+		right: 5%;
+		width: 15%;
+		user-select: none;
+		text-align: left;
+	}
+	#burger:checked+label+nav{
+		display: block;
+	} /*in this moment we've already done burger*/
+	[for=burger]::before{  
+		content: '☰'; /*make ☰ disapear*/
+	}
+	#burger:checked+[for=burger]::before{
+		content: '⌧'; /*change mark*/
+
+		/*animation*/
+		animation: show 5s linear;
+
+	}
+}
+@keyframes show{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
