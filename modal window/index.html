@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <link href="modal.js">
+    <title>Modal window</title>
+</head>
+<body>
+    <button id="show-modal" class="btn">Открыть</button>
+
+    <script src="modal.js"></script>
+    <script>
+        (function () {
+            // создаём модальное окно
+            let modal = $modal({
+            title: 'Текст заголовка',
+            content: '<p>Содержимое модального окна...</p>',
+            footerButtons: [
+                { class: 'btn btn__cancel', text: 'Отмена', handler: 'modalHandlerCancel' },
+                { class: 'btn btn__ok', text: 'ОК', handler: 'modalHandlerOk' }
+            ]
+            });
+            // modal.hide(); //Используй чтобы скрыть окно
+            // modal.destroy(); //Используй чтобы удалить окно
+            // при клике по кнопке #show-modal
+            document.querySelector('#show-modal').addEventListener('click', function () {
+                // отобразим модальное окно
+                modal.show();
+            });
+        })();
+    </script>    
+</body>
+</html>
